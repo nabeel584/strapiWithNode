@@ -4,14 +4,15 @@
   "info": {
     "singularName": "restaurant",
     "pluralName": "restaurants",
-    "displayName": "Restaurant"
+    "displayName": "Restaurant",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Cheezious": {
+    "Name": {
       "type": "string",
       "required": true,
       "unique": true
@@ -24,6 +25,11 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "mappedBy": "restaurants"
+    },
+    "text": {
+      "type": "string",
+      "unique": true,
+      "required": true
     }
   }
 }
